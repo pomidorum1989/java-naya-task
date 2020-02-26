@@ -1,10 +1,9 @@
 public class Main {
     public static void main(String[] args) {
-        MessageFactory factory = new MessageFactory();
 
-        Message Viber = factory.getMessage(MessageTypes.VIBER);
-        Message Whatsup = factory.getMessage(MessageTypes.WHATSUP);
-        Message Telegram = factory.getMessage(MessageTypes.TELEGRAM);
+        Message Viber = MessageTypes.valueOf("VIBER").sentMessage();
+        Message Whatsup = MessageTypes.valueOf("WHATSUP").sentMessage();
+        Message Telegram = MessageTypes.valueOf("TELEGRAM").sentMessage();
 
         Viber.sendMessage();
         Whatsup.sendMessage();
