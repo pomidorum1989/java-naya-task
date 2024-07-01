@@ -1,1 +1,3 @@
-Build messanger abstract structure with the help of ENUMs
+# Messenger Abstract Structure with Enums
+
+This document outlines an abstract structure for a messaging system using enums in Java.
