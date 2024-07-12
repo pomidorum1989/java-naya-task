@@ -1,17 +1,19 @@
+package src.main.java.org.dorum;
+
 public enum MessageTypes {
         VIBER {
                 public ViberMessage sentMessage () {
                         return new ViberMessage();
                 }
         },
-        WHATSUP {
-                public WhatsupMessage sentMessage () {
-                        return new WhatsupMessage();
+        WHATSAPP {
+                public WhatsAppMessage sentMessage () {
+                        return new WhatsAppMessage();
                 }
         },
         TELEGRAM {
-                public Telegrammessage sentMessage () {
-                        return new Telegrammessage();
+                public TelegramMessage sentMessage () {
+                        return new TelegramMessage();
                 }
         };
 
